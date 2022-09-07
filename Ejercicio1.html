@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 1</title>
+    </head>
+    <body>
+        <script lenguage="JavaScript">
+            var metros;
+            metros = prompt("Ingrese la cantidad de metros:");
+            if(metros>0 && metros<1000){
+                document.write('Transporte indicado: Pie.')
+            }
+            else if(metros>=1000 && metros<10000){
+                document.write('Transporte indicado: Bicicleta.')
+            }
+            else if(metros>=10000 && metros<30000){
+                document.write('Transporte indicado: Colectivo.')
+            }
+            else if(metros>=30000 && metros<100000){
+                document.write('Transporte indicado: Auto.')
+            }
+            else if(metros>=100000){
+                document.write('Transporte indicado: Avión.')
+            }
+            else
+                document.write('Error en el numero ingresado.')
+        </script>
+    </body>
+</html>

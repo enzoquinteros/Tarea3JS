@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 2</title>
+    </head>
+   <body>
+        <script language="JavaScript">
+            var f = 0;
+            const max = prompt("Cuantos numeros va a ingresar?")
+            var num = [];
+            let mayor = 0;
+            while(f<max){
+                num[f] = prompt("Ingrese numero " + f + ":")
+                f++;
+            }
+            for(var i=0; i<f; i++){
+                if(num[i]>mayor){
+                    mayor = num[i]            
+                }
+            }
+            document.write('El numero mayor es: '+ mayor)
+        </script>
+   </body> 
+</html>
